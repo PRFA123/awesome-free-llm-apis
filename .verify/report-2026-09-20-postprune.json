@@ -1,0 +1,27 @@
+{
+  "modelResults": [
+    {
+      "provider": "LLM7.io",
+      "modelId": "mistral-Nemo-Instruct-2407",
+      "verdict": "PASS",
+      "httpStatus": 200,
+      "latencyMs": 2644,
+      "errorClass": null,
+      "responseSnippet": "{\"service_tier\":\"default\",\"id\":\"[REDACTED]\",\"object\":\"chat.completion\",\"created\":1789900810,\"model\":\"mistral-Nemo-Instruct-2407\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"OK! How can I assist you today\",\"reasoning_content\":null,\"name\":null,\"tool_calls\":[]},\"finish_reason\":\"length\",\"logprobs\":null}],\"usage\":{\"prompt_tokens\":6,\"total_tokens\":14,\"completion_tokens\":8,\"estimated_cost\":3.54e-07,\"prompt_tokens_details\":null}}",
+      "billed": null,
+      "evidenceUrl": null
+    },
+    {
+      "provider": "LLM7.io",
+      "modelId": "minimax-m2.7",
+      "verdict": "PASS",
+      "httpStatus": 200,
+      "latencyMs": 2452,
+      "errorClass": null,
+      "responseSnippet": "{\"choices\":[{\"finish_reason\":\"length\",\"index\":0,\"message\":{\"content\":\"OK. If you have any questions or need assistance, feel free to ask! 😊. If you need anything else, just let me know! OK. Is there\",\"role\":\"assistant\",\"reasoning_content\":\"The user says: \\\"Say OK\\\". Probably they want me to respond with \\\"OK\\\". No policy violation. So I just respond \\\"OK\\\".\\n\"}}],\"created\":1789900820,\"id\":\"[REDACTED]\",\"model\":\"minimax-m2.7\",\"object\":\"chat.completion\",\"system_fingerprint\":\"vllm-0.25.1-tp2-0cb5bb",
+      "billed": null,
+      "evidenceUrl": null
+    }
+  ],
+  "baseUrlChecks": []
+}

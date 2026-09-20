@@ -1,0 +1,60 @@
+{
+  "modelResults": [
+    {
+      "provider": "LLM7.io",
+      "modelId": "Qwen2.5-Coder-32B-Instruct",
+      "verdict": "FAIL",
+      "httpStatus": 400,
+      "latencyMs": 306,
+      "errorClass": "NOT_FOUND",
+      "responseSnippet": "{\"error\":{\"message\":\"Model 'Qwen2.5-Coder-32B-Instruct' is currently unavailable.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"model_unavailable\"}}",
+      "billed": null,
+      "evidenceUrl": null
+    },
+    {
+      "provider": "LLM7.io",
+      "modelId": "Llama-3.3-70B-Instruct",
+      "verdict": "FAIL",
+      "httpStatus": 400,
+      "latencyMs": 133,
+      "errorClass": "NOT_FOUND",
+      "responseSnippet": "{\"error\":{\"message\":\"Model 'Llama-3.3-70B-Instruct' is currently unavailable.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"model_unavailable\"}}",
+      "billed": null,
+      "evidenceUrl": null
+    },
+    {
+      "provider": "LLM7.io",
+      "modelId": "Mistral-Small-24B-Instruct-2501",
+      "verdict": "FAIL",
+      "httpStatus": 400,
+      "latencyMs": 309,
+      "errorClass": "NOT_FOUND",
+      "responseSnippet": "{\"error\":{\"message\":\"Model 'Mistral-Small-24B-Instruct-2501' is currently unavailable.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"model_unavailable\"}}",
+      "billed": null,
+      "evidenceUrl": null
+    },
+    {
+      "provider": "LLM7.io",
+      "modelId": "deepseek-v3.2",
+      "verdict": "FAIL",
+      "httpStatus": 400,
+      "latencyMs": 222,
+      "errorClass": "NOT_FOUND",
+      "responseSnippet": "{\"error\":{\"message\":\"Model 'deepseek-v3.2' is currently unavailable.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"model_unavailable\"}}",
+      "billed": null,
+      "evidenceUrl": null
+    },
+    {
+      "provider": "LLM7.io",
+      "modelId": "gpt-o4-mini",
+      "verdict": "FAIL",
+      "httpStatus": 400,
+      "latencyMs": 205,
+      "errorClass": "NOT_FOUND",
+      "responseSnippet": "{\"error\":{\"message\":\"Model 'gpt-o4-mini' is currently unavailable.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"model_unavailable\"}}",
+      "billed": null,
+      "evidenceUrl": null
+    }
+  ],
+  "baseUrlChecks": []
+}

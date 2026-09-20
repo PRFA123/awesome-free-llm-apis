@@ -1,0 +1,60 @@
+{
+  "modelResults": [
+    {
+      "provider": "LLM7.io",
+      "modelId": "gpt-oss:120b",
+      "verdict": "FAIL",
+      "httpStatus": 400,
+      "latencyMs": 269,
+      "errorClass": "NOT_FOUND",
+      "responseSnippet": "{\"error\":{\"message\":\"Model 'gpt-oss:120b' is currently unavailable.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"model_unavailable\"}}",
+      "billed": null,
+      "evidenceUrl": null
+    },
+    {
+      "provider": "LLM7.io",
+      "modelId": "qwen2.5-coder:32b",
+      "verdict": "FAIL",
+      "httpStatus": 400,
+      "latencyMs": 161,
+      "errorClass": "NOT_FOUND",
+      "responseSnippet": "{\"error\":{\"message\":\"Model 'qwen2.5-coder:32b' is currently unavailable.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"model_unavailable\"}}",
+      "billed": null,
+      "evidenceUrl": null
+    },
+    {
+      "provider": "LLM7.io",
+      "modelId": "gpt-5-nano",
+      "verdict": "FAIL",
+      "httpStatus": 400,
+      "latencyMs": 130,
+      "errorClass": "NOT_FOUND",
+      "responseSnippet": "{\"error\":{\"message\":\"Model 'gpt-5-nano' is currently unavailable.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"model_unavailable\"}}",
+      "billed": null,
+      "evidenceUrl": null
+    },
+    {
+      "provider": "LLM7.io",
+      "modelId": "llama-3.3-70b-instruct",
+      "verdict": "FAIL",
+      "httpStatus": 400,
+      "latencyMs": 162,
+      "errorClass": "NOT_FOUND",
+      "responseSnippet": "{\"error\":{\"message\":\"Model 'llama-3.3-70b-instruct' is currently unavailable.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"model_unavailable\"}}",
+      "billed": null,
+      "evidenceUrl": null
+    },
+    {
+      "provider": "LLM7.io",
+      "modelId": "gemma-3-27b-it",
+      "verdict": "FAIL",
+      "httpStatus": 400,
+      "latencyMs": 210,
+      "errorClass": "NOT_FOUND",
+      "responseSnippet": "{\"error\":{\"message\":\"Model 'gemma-3-27b-it' is currently unavailable.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"model_unavailable\"}}",
+      "billed": null,
+      "evidenceUrl": null
+    }
+  ],
+  "baseUrlChecks": []
+}

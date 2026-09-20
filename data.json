@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-21",
+  "lastUpdated": "2026-09-20",
   "providers": [
     {
       "name": "Aion Labs",
@@ -640,14 +640,6 @@
       "footnoteRef": 10,
       "models": [
         {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
-          "context": "128K",
-          "maxOutput": "—",
-          "modality": "Text",
-          "rateLimit": "10 RPM, 60 req/hr (anonymous)"
-        },
-        {
           "id": "mistral-Nemo-Instruct-2407",
           "name": "mistral-Nemo-Instruct-2407",
           "context": "128K",
@@ -661,6 +653,14 @@
           "context": "180K",
           "maxOutput": "—",
           "modality": "Text (reasoning)",
+          "rateLimit": "10 RPM, 60 req/hr (anonymous)"
+        },
+        {
+          "id": null,
+          "name": "+ rotating `turbo` catalog",
+          "context": "Varies",
+          "maxOutput": "—",
+          "modality": "Text",
           "rateLimit": "10 RPM, 60 req/hr (anonymous)"
         }
       ]
@@ -1173,7 +1173,7 @@
     },
     {
       "id": 10,
-      "text": "LLM7.io rotates its catalog frequently, so the model list changes between checks. Access is tier-based, not token-based: `turbo` models are reachable anonymously or with a free token, `pro` models need the paid plan ([models API](https://docs.llm7.io/guides/models-api)). Anonymous access is capped at 1 RPS, 10 RPM, 60 requests per hour and 500,000 tokens per 24 hours; a free token raises that to 2 RPS, 40 RPM, 100 requests per hour and 1,000,000 tokens per 24 hours ([limits](https://docs.llm7.io/limits)). A paid Pro plan is available at $12/month. Anonymous access with no key was confirmed by live request on 2026-08-21."
+      "text": "LLM7.io rotates its catalog frequently, so the model list changes between checks. Access is tier-based, not token-based: `turbo` models are reachable anonymously or with a free token, `pro` models need the paid plan ([models API](https://docs.llm7.io/guides/models-api)). Anonymous access is capped at 1 RPS, 10 RPM, 60 requests per hour and 500,000 tokens per 24 hours; a free token raises that to 2 RPS, 40 RPM, 100 requests per hour and 1,000,000 tokens per 24 hours ([limits](https://docs.llm7.io/limits)). A paid Pro plan is available at $12/month. Anonymous access with no key was confirmed by live request on 2026-09-20."
     },
     {
       "id": 11,

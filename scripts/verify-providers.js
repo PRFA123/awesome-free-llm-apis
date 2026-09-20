@@ -508,9 +508,9 @@ async function runSelfTest() {
   console.log('=== Self-test ===');
 
   // 1. Test against a known-good provider (LLM7.io, keyless)
-  console.log('Self-test 1: LLM7.io keyless call with gpt-4o-mini ...');
+  console.log('Self-test 1: LLM7.io keyless call with mistral-Nemo-Instruct-2407 ...');
   const startMs = Date.now();
-  const res1 = await callStandard('https://api.llm7.io/v1', 'gpt-4o-mini', null);
+  const res1 = await callStandard('https://api.llm7.io/v1', 'mistral-Nemo-Instruct-2407', null);
   const parsed1 = parseCompletion(res1.body || '');
   const v1 = verdict(res1.status, res1.body || '', parsed1);
   console.log(`  Status: ${res1.status}, Verdict: ${v1}`);
