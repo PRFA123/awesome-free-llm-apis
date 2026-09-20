@@ -36,9 +36,10 @@ node scripts/verify-providers.js --out .verify/report-x.json --provider "Groq"  
 node scripts/verify-providers.js --self-test                                     # harness check
 ```
 
-`.verify/` holds the dated JSON reports and `state.json`, which tracks consecutive-failure
-streaks per `Provider/model` (`count`, `firstFail`, `errorClass`) across runs so a repeatedly
-failing model can be spotted before it's removed from `data.json`.
+`.verify/` holds the dated JSON reports from `--out`. It also has a `state.json` with
+per-`Provider/model` failure streaks (`count`, `firstFail`, `errorClass`) — but
+`verify-providers.js` never reads or writes it; nothing in the repo does. Treat it as a
+stale, manually-maintained snapshot, not live state the script updates.
 
 ## The repo's own skill
 
