@@ -30,6 +30,11 @@ jobs:
         with:
           fetch-depth: 1
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
       - name: Run Claude Code
         id: claude
         uses: anthropics/claude-code-action@v1
@@ -42,12 +47,18 @@ jobs:
           # Optional: Trigger when specific user is assigned to an issue
           # assignee_trigger: "claude-bot"
 
-          # Optional: Configure Claude's behavior with CLI arguments
-          # claude_args: |
-          #   --model claude-opus-4-1-20250805
-          #   --max-turns 10
-          #   --allowedTools "Bash(npm install),Bash(npm run build),Bash(npm run test:*),Bash(npm run lint:*)"
-          #   --system-prompt "Follow our coding standards. Ensure all new code has tests. Use TypeScript for new files."
+          # Let Claude run this repo's own scripts (needed for provider verification
+          # and README regeneration — both are plain, side-effect-scoped Node scripts).
+          claude_args: |
+            --allowedTools "Bash(node scripts/verify-providers.js:*),Bash(node scripts/generate-readme.js)"
+
+          # Optional: Advanced settings configuration
+          # settings: |
+          #   {
+          #     "env": {
+          #       "NODE_ENV": "test"
+          #     }
+          #   }
 
           # Optional: Advanced settings configuration
           # settings: |
