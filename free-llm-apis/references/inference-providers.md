@@ -192,10 +192,17 @@ export CLOUDFLARE_ACCOUNT_ID="your-account-id"
 
 ## LLM7.io
 
-**Models:** DeepSeek R1, Flash-Lite, Qwen2.5 Coder +27 more
-**Limits:** 30 RPM (120 with token)
+**Models:** `mistral-Nemo-Instruct-2407`, `minimax-m2.7` + a rotating `turbo` catalog
+**Limits:** 10 RPM, 60 req/hr anonymous; 40 RPM, 100 req/hr with a free token
+
+LLM7.io rotates its catalog frequently, so model IDs come and go between checks. Query
+`https://api.llm7.io/v1/models` for the current list; the two IDs above were confirmed by
+live request on 2026-09-20.
 
 ### Get your API key
+
+Anonymous access needs no key at all -- send requests with any placeholder token. A free
+token only raises the rate and token limits; it does not unlock extra models.
 
 1. Go to [LLM7 Token page](https://token.llm7.io).
 2. Register or sign in to get a token.
@@ -212,7 +219,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="deepseek-r1",
+    model="mistral-Nemo-Instruct-2407",
     messages=[{"role": "user", "content": "Hello!"}]
 )
 print(response.choices[0].message.content)
